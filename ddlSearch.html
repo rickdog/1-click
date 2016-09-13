@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DDLSearch</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-2.1.3.js" type="text/javascript"></script>
+    <style type="text/css">
+        body {
+                margin: 10px 20px;
+        }
+        div.container {
+                background-color: #F9F9F0;
+                border:1px dotted #E0E0E0;
+                padding: 10px;
+        }
+        h1 {
+                color: #FF9900;
+                font: bold 1.2em Arial, Verdana, Helvetica, Sans-serif;
+                margin : 0;
+                padding: 0;
+        }
+        p, li, td, blockquote, pre {
+                font-size  : 0.8em;
+                line-height: 1.5em;
+        }
+        
+</style>
+  </head>
+  <body>
+    <center>
+    <a href="#">
+      <img style="width: 276px; height: 110px;"
+      alt="1-click hosts search engine - DDLSearch" src="logo.png"
+      border="0" />
+    </a>
+    <table border="0" cellpadding="4" cellspacing="0">
+      <tbody>
+        <tr>
+          <td nowrap="nowrap">
+            <font size="-1">
+            <b>Ddl</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="q" href="http://ddlsearch.free.fr/web.php"
+            title="Web">Web</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="q" href="http://ddlsearch.free.fr/torrent.php"
+            title="Torrent">Torrent</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>
+              <a href="http://ddlsearch.free.fr/more.php" class="q"
+              title="More">plus »</a>
+            </b></font>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/javascript">
+	
+function doSearch(x)
+{
+	console.log(document.querySelector("#service").value);
+	console.log(document.querySelector("#engine").value);
+	console.log(document.querySelector("#query").value);
+	window.open(document.querySelector("#engine").value + '"' + document.querySelector("#service").value + '" "' + document.querySelector("#query").value + '"', '_blank');
+}
+</script> 
+
+    <!--form action="http://ddlsearch.free.fr/frame/redirect.php" target="_blank" method="get" name="f" id=""-->
+    <form action="javascript:doSearch(this);" accept-charset="utf-8"
+    method="get" name="f" id="">
+    <p style="text-align: center;"></p>
+    <table align="center" bgcolor="#336699" border="0" cellspacing="0"
+    width="60%">
+      <tbody>
+        <tr>
+          <td>
+            <table bgcolor="#FFFFFF" border="0" cellpadding="3"
+            cellspacing="0" width="100%">
+              <tbody>
+                <tr>
+                  <td>
+                    <div align="center">
+                      <br />
+                      <font size="-1">
+					  DDLsearch is a search engine for 1-click host file sharing sites.</font>
+                    </div>
+                    <br />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <b>Search For:</b> 
+    <input id="query" maxlength="2048" name="q" size="55"
+    title="Search Rapidshare DDL link" value="" />
+    <br />
+    <b>Search Engine:</b> 
+    <select id="engine"name="m">
+      <option value="https://www.google.com/search?q=">Google</option>
+      <option value="https://search.yahoo.com/search?q=">Yahoo</option>
+      <option value="http://www.bing.com/search?q=">Bing</option>
+      <option value="http://www.ask.com/web?q=">Ask</option>
+      <option value="https://www.qwant.com/?q=">Qwant</option>
+      <option value="https://www.ixquick.com/do/search?q=">IxQuick</option>
+      <option value="https://duckduckgo.com/?ia=web&q=">DuckDuckGo</option>
+      <option value="https://www.yandex.com/search/?text=">Yandex</option>
+      <option value="http://go.mail.ru/search?rf=1111&fm=1&q=">Mail.ru</option>
+      <option value="http://nigma.ru/?t=web&yn=1&gl=1&rm=1&ms=1&yh=1&av=1&nm=1&lang=all&srt=0&sf=1&s=">Nigma</option>
+
+
+
+	  
+    </select>
+    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site to Find:</b> 
+    <select id="service" name="s">
+      <option value="180upload.com/">180upload.com</option>
+      <option value="1fichier.com/">1fichier.com</option>
+      <option value="1filesharing.com/">1filesharing.com</option>
+      <option value="2downloadz.com/">2downloadz.com</option>
+      <option value="2shared.com/file">2shared.com</option>
+      <option value="4downfiles.net/">4downfiles.net</option>
+      <option value="4share.vn/">4share.vn</option>
+      <option value="4shared.com/file">4shared.com</option>
+      <option value="4upld.com/">4upld.com</option>
+      <option value="5azn.net/">5azn.net</option>
+      <option value="9upload.com/">9upload.com</option>
+      <option value="9xupload.me/">9xupload.me</option>
+      <option value="adrive.com/public/">adrive.com</option>
+      <option value="affix.is/">affix.is</option>
+      <option value="akafile.com/">akafile.com</option>
+      <option value="alfafile.net/">alfafile.net</option>
+      <option value="amonshare.com/">amonshare.com</option>
+      <option value="anafile.com/">anafile.com</option>
+      <option value="antshare.net/">antshare.net</option>
+      <option value="anysend.com/">anysend.com</option>
+      <option value="arabloads.net/">arabloads.net</option>
+      <option value="ausfile.com/">ausfile.net</option>
+      <option value="backin.net/">backin.net</option>
+      <option value="pan.baidu.com/">pan.baidu.com</option>
+      <option value="bankupload.com/">bankupload.com</option>
+      <option value="bdupload.info/">bdupload.info</option>
+      <option value="bdupload.org/">bdupload.org</option>
+      <option value="bezsms.org/">bezsms.org</option>
+      <option value="bigfile.to/">bigfile.to</option>
+      <option value="bin.ge/">bin.ge</option>
+      <option value="bit-shares.com/">bit-shares.com</option>
+      <option value="bitshare.com/files">bitshare.com</option>
+      <option value="app.box.com/">box.com</option>
+      <option value="boxca.com/">boxca.com</option>
+      <option value="briskfile.com/">briskfile.com	</option>
+      <option value="brupload.net/">brupload.net</option>
+      <option value="bytewhale.com/">bytewhale.com</option>
+      <option value="calabox.com/">calabox.com</option>
+      <option value="catshare.net/">catshare.net</option>
+      <option value="chayfile.com/">chayfile.com</option>
+      <option value="chomikuj.pl/">chomikuj.pl</option>
+      <option value="clicknupload.com/">clicknupload.com</option>
+      <option value="clicknupload.link/">clicknupload.link</option>
+      <option value="cloud.mail.ru/">cloud.mail.ru</option>
+      <option value="cloudlocker.biz/">cloudlocker.biz</option>
+      <!--option value="cloudflare.net/">cloudflare.net (CDN)</option-->
+      <option value="cloudme.com/">cloudme.com</option>
+      <option value="cloudshares.net/">cloudshares.net</option>
+      <option value="cloudsix.me/">cloudsix.me</option>
+      <option value="cloudtime.to/">cloudtime.to</option>
+      <option value="cloudzilla.to/">cloudzilla.to</option>
+      <option value="come2store.com/">come2store.com</option>
+      <option value="copy.com/">copy.com</option>
+      <option value="cosmobox.org/">cosmobox.org</option>
+      <option value="crocko.com/">crocko.com</option>
+      <option value="ctfile.com/">ctfile.com</option>
+      <option value="cubby.com/">cubby.com</option>
+      <option value="d-h.st/">d-h.st</option>
+      <option value="dailyfiles.net/">dailyfiles.net</option>
+      <option value="dailyuploads.net/">dailyuploads.net</option>
+      <option value="daofile.com/">daofile.com</option>
+      <option value="datafile.com/">datafile.com</option>
+      <option value="data.hu/">data.hu/</option>
+      <option value="datafilehost.com/download">datafilehost.com</option>
+      <option value="datei.to/">datei.to</option>
+      <option value="daten-hoster.de/?d=">daten-hoster.de</option>
+      <option value="datoid.cz/">datoid.cz</option>
+      <option value="datoteke.com/">datoteke.com</option>
+      <option value="dbr.ee/">dbr.ee</option>
+      <option value="depfile.com/">depfile.com</option>
+      <option value="depositfiles.com/files">depositfiles.com</option>
+      <option value="devfilescloud.com/">devfilescloud.com</option>
+      <option value="dirrtyshar.es/">www.dirrtyshar.es</option>
+      <option value="disk.yandex.com/">disk.yandex.com</option>
+      <option value="disk-space.ru/">disk-space.ru</option>
+      <option value="dl.free.fr/">dl.free.fr</option>
+      <option value="dl.dropbox.com/u/">dropbox.com</option>
+      <option value="dlera.upera.co/">dlera.upera.co</option>
+      <option value="dopefile.com/">dopefile.com</option>
+      <option value="dopefile.pk/">dopefile.pk</option>
+      <option value="doraupload.com/">doraupload.com</option>
+      <option value="downace.com/">downace.com</option>
+      <option value="downflow.net/">downflow.net</option>
+      <option value="downloadani.me/">downloadani.me</option>
+      <option value="drive.google.com/">drive.google.com</option>
+      <option value="drivehq.com/">drivehq.com</option>
+      <option value="driveonweb.de/">driveonweb.de</option>
+      <option value="dropbox.com/">dropbox.com</option>
+      <option value="dropcanvas.com/">dropcanvas.com</option>
+      <option value="dropfile.to/">dropfile.to</option>
+      <option value="dropjiffy.com/">dropjiffy.com</option>
+      <option value="d.pr/">gropler.com (d.pr)</option>
+      <option value="dropcanvas.com/">dropcanvas.com</option>
+      <option value="dropmark.com/">dropmark.com</option>
+      <option value="dumpfiles.org/">dumpfiles.org</option>
+      <option value="easybytez.com/">easybytez.com</option>
+      <option value="edisk.cz/">edisk.cz</option>
+      <option value="egnyte.com/fl/">egnyte.com</option>
+      <option value="egoshare.com/download.php?id=">egoshare.com</option>
+      <option value="emaillargefile.com/getfile.aspx">emaillargefile.com</option>
+      <option value="vault.elephantdrive.com/">elephantdrive.com</option>
+      <option value="embedupload.com/">embedupload.com</option>
+      <option value="envoyercefichier.com/files/">envoyercefichier.com</option>
+      <option value="euroshare.eu/file/">euroshare.eu</option>
+      <option value="ex.ua/">ex.ua</option>
+      <option value="exoshare.com/">exoshare.com</option>
+      <option value="extabit.com/file/">extabit.com</option>
+      <option value="failiem.lv/">failiem.lv</option>
+      <option value="fast-files.com/getfile.aspx?file=">fast-files.com</option>
+      <option value="fastshare.cz/">fastshare.cz</option>
+      <option value="faststore.com/">faststore.com</option>
+      <option value="faststore.org/">faststore.org</option>
+      <option value="fastupload.ro/">fastupload.ro</option>
+      <option value="fboom.me/">fboom.me</option>
+      <option value="fichier-pdf.fr/">fichier-pdf.fr</option>
+      <option value="filaty.com/">filaty.com</option>\
+      <option value="file.al/">file.al/</option>\
+      <option value="file.io/get">file.io</option>
+      <option value="file.town/">file.town</option>
+      <option value="file.up09.com/">file.up09.com</option>
+      <option value="file-post.net/">file-post.net</option>
+      <option value="file-share.top/">file-share.top</option>
+      <option value="file-upload.net/">file-upload.net</option>
+      <option value="fileai.com/">fileai.com</option>
+      <option value="filebox.com">filebox.com</option>
+      <option value="filecad.com/">filecad.com</option>
+      <option value="filecloud.cc/">filecloud.cc</option>
+      <option value="filecloud.io/">filecloud.io</option>
+      <option value="filedais.com/">filedais.com</option>
+      <option value="filedropper.com/">filedropper.com</option>
+      <option value="filedwon.info/">filedwon.info</option>
+      <option value="filefactory.com/file">filefactory.com</option>
+      <option value="fileflyer.com/view/">fileflyer.com</option>
+      <option value="filefreak.com">filefreak.com</option>
+      <option value="fileget.ru/www">fileget.ru</option>
+      <option value="filehat.com/">filehat.com</option>
+      <option value="filehoot.com/">filehoot.com</option>
+      <option value="filehost.pw/">filehost.pw</option>
+      <option value="filehosting.org/file">filehosting.org</option>
+      <option value="fileice.net/">fileice.net</option>
+      <option value="filejoker.net/">filejoker.netz</option>
+      <option value="fileload.io/">fileload.io</option>
+      <option value="filemail.com/">filemail.com</option>
+      <option value="filemoney.com/">filemoney.com</option>
+      <option value="filenurse.com/">filenurse.com</option>
+      <option value="filenuke.com/">filenuke.com</option>
+      <option value="filepi.com/">filepi.com</option>
+      <option value="filepost.ru/">filepost.ru</option>
+      <option value="filepup.net/">filepup.net</option>
+      <option value="filer.net/">filer.net</option>
+      <option value="personal.filesanywhere.com/fs/">filesanywhere.com</option>
+      <option value="filepost.ru/www">filepost.ru</option>
+      <option value="filepup.net/">filepup.net</option>
+      <option value="filerio.in/">filerio.in</option>
+      <option value="files.fm/">files.fm</option>
+      <option value="filesanywhere.com/">filesanywhere.com</option>
+      <option value="filesave.me/file">filesave.me</option>
+      <option value="filescdn.com/">filescdn.com</option>
+      <option value="filescrate.com/">filescrate.com</option>
+      <option value="fileserve.com/file/">fileserve.com</option>
+      <option value="filesflash.com/">filesflash.com</option>
+      <option value="filesflash.net/">filesflash.net</option>
+      <option value="fileshareup.com/">fileshareup.com</option>
+      <option value="fileshark.pl/">fileshark.pl</option>
+      <option value="fileshd.net/">fileshd.net</option>
+      <option value="filesmonster.com/dl">filesmonster.com</option>
+      <option value="fileshareup.com/">fileshareup.com</option>
+      <option value="filespace.com/">filespace.com</option>
+      <option value="filestackapi.com/">filestack.com</option>
+      <option value="filestore.to/">filestore.to</option>
+      <option value="filesuniverse.com/">filesuniverse.com</option>
+      <option value="filesupload.org/">filesupload.org</option>
+      <option value="filesuploader.com/">filesuploader.com</option>
+      <option value="fileswap.com/dl">fileswap.com</option>
+      <option value="filethief.com/">filethief.com</option>
+      <option value="filetolink.com//">filetolink.com/</option>
+      <option value="filetut.com/">filetut.com</option>
+      <option value="fileweed.net/">fileweed.net</option>
+      <option value="firedrive.com/">firedrive.com</option>
+      <option value="firedrive.im/">firedrive.im</option>
+      <option value="firedrop.com/">firedrop.com</option>
+      <option value="fireswap.org/">fireswap.org</option>
+      <option value="forum.flacmania.ru/">flacmania.ru</option>
+      <option value="flashmirrors.com/">flashmirrors.com</option>
+      <option value="flexydrive.com/">flexydrive.com</option>
+      <option value="fliiby.com/file">fliiby.com</option>
+      <option value="flipdrive.com/">flipdrive.com</option>
+      <option value="florenfile.com/">florenfile.com</option>
+      <option value="flyfiles.net/">flyfiles.net</option>
+      <option value="foldder.com/">foldder.com</option>
+      <option value="foxupload.online/">foxupload.online</option>
+      <option value="freakshare.com/files/">freakshare.com</option>
+      <option value="freakshare.net/files">freakshare.net</option>
+      <option value="download.free-transfer.de/">free-transfer.de</option>
+      <option value="free-uploading.com/">free-uploading.com</option>
+      <option value="dl.free.fr/">free.fr</option>
+      <option value="freedisc.pl/">freedisc.pl</option>
+      <option value="fshare.vn/">fshare.vn</option>
+      <option value="furk.net/df/">furk.net</option>
+      <option value="gamefront.com/">gamefront.com</option>
+      <option value="gavitex.com/share">gavitex.com</option>
+      <option value="gbload.com/">gbload.com</option>
+      <option value="gboxes.com/">gboxes.com</option>
+      <option value="ge.tt/">ge.tt</option>
+      <option value="gigabase.com/getfile">gigabase.com</option>
+      <option value="gigamirror.com/">gigamirror.com</option>
+      <option value="gigapeta.com/dl/">gigapeta.com</option>
+      <option value="gigasize.com/get.php">gigasize.com</option>
+      <option value="go4up.com/dl/">go4up.com</option>
+      <option value="gofile.ir/">gofile.ir/option&gt;</option>
+      <option value="grifthost.com/">grifthost.com</option>
+      <option value="grimblr.com/">grimblr.com/</option>
+      <option value="gulfup.cc/">gulfup.cc</option>
+      <option value="download.cz.hellshare.com/">hellshare.com</option>
+      <option value="hellupload.com/">hellupload.com</option>
+      <option value="hexupload.com/">hexupload.com</option>
+      <option value="hfiles.ro/">hfiles.ro</option>
+      <option value="hidrive.strato.com/">hidrive.strato.com</option>
+      <option value="hightail.com/">hightail.com</option>
+      <option value="hippohosted.com/">hippohosted.com</option>
+      <option value="hitfile.net/">hitfile.net</option>
+      <option value="hitfile.pp.ua/">hitfile.pp.ua</option>
+      <option value="hostr.co/">hostr.co</option>
+      <option value="hostuje.net/">hostuje.net/</option>
+      <option value="hotfile.com/dl/">hotfile.com</option>
+      <option value="hotfiles.ro/">hotfiles.ro</option>
+      <option value="hotlink.cc/">hotlink.cc</option>
+      <option value="howfile.com/">howfile.com</option>
+      <option value="hulkshare.com/">hulkshare.com</option>
+      <option value="hubic.com/">hubic.com</option>
+      <option value="hugefiles.net/">hugefiles.net</option>
+      <option value="hulkload.com/">hulkload.com</option>
+      <option value="hyperfileshare.com/d">hyperfileshare.com</option>
+      <option value="idrive.com/">idrive.com</option>
+      <option value="idrivesync.com/">idrivesync.com</option>
+      <option value="ifolder.ru/">ifolder.ru</option>
+      <option value="iguanashare.com/">iguanashare.com</option>
+      <option value="inclouddrive.com/">inclouddrive.com</option>
+      <option value="indishare.me/">indishare.me</option>
+      <option value="interfile.net/">interfile.net</option>
+      <option value="jeodrive.com/">jeodrive.com</option>
+      <option value="jheberg.net/">jheberg.net</option>
+      <option value="jottacloud.com/p">jottacloud.com</option>
+      <option value="jumbofilebox.com/">jumbofilebox.com</option>
+      <option value="jumpshare.com/">jumpshare.com</option>
+      <option value="jmp.sh/">jumpshare.com (short)</option>
+      <option value="junocloud.me/">junocloud.me</option>
+      <option value="public.justcloud.com/">justcloud.com</option>
+      <option value="k2s.cc/">k2s.cc</option>
+      <option value="katzfiles.com/">katzfiles.com</option>
+      <option value="keeload.com/">keeload.com</option>
+      <option value="keep2share.cc/">keep2share.cc</option>
+      <option value="keepfile.org/">keepfile.org</option>
+      <option value="kingfiles.net/">kingfiles.net</option>
+      <option value="k00.fr/">koofr.net</option>
+      <option value="lafiles.com/">lafiles.com</option>
+      <option value="lambda.sx/">lambda.sx</option>
+      <option value="leteckaposta.cz/">leteckaposta.cz</option>
+      <option value="letty.pl/">letty.pl</option>
+      <option value="lilfile.com/">lilfile.com</option>
+      <option value="limefile.com/">limefile.com</option>
+      <option value="littlebyte.net/">littlebyte.net</option>
+      <option value="load.to/">load.to</option>
+      <option value="loadus.net/">loadus.net</option>
+	  <option value="loadus.net/">loadus.net</option>
+      <option value="longfiles.com/">longfiles.com</option>
+      <option value="lumfile.com/">lumfile.com</option>
+      <option value="lunaticfiles.com/">lunaticfiles.com</option>
+      <option value="lynxshare.com/">lynxshare.com</option>
+      <option value="manyuploading.com/">manyuploading.com</option>
+      <option value="maxmirror.com/">maxmirror.com</option>
+      <option value="mechoshare.com/">mechoshare.com</option>
+      <option value="media4up.com/">media4up.com</option>
+      <option value="mediafire.com/?">mediafire.com</option>
+      <option value="mediafree.co/">mediafree.co</option>
+      <option value="mediaupload.us/?">mediaupload.us</option>
+      <option value="meocloud.pt/">meocloud.pt</option>
+      <option value="mega.co.nz/">mega.co.nz</option>
+      <option value="megacache.net/">megacache.net</option>
+      <option value="megadrive.tv/">megadrive.tv</option>
+      <option value="megafileupload.com/">megafileupload.com</option>
+      <option value="megafirez.com/">megafirez.com</option>
+      <option value="megaloads.org/">megafirez.com</option>
+      <option value="d01.megashares.com/?d01">megashares.com</option>
+      <option value="megaupper.com/">megaupper.com</option>
+      <option value="memotoo.com/filePublic/">memotoo.com</option>
+      <option value="meocloud.pt/">meocloud.pt</option>
+      <option value="mexashare.com/">mexashare.com</option>
+      <option value="midiashared.com/">midiashared.com</option>
+      <option value="mightyupload.com/">mightyupload.com</option>
+      <option value="portal.mimedia.com/">mimedia.com</option>
+      <option value="mimed.io/">mimedia.com (short URL)</option>
+      <option value="minhateca.com.br/">minhateca.com.br</option>
+      <option value="mirrorcreator.com/">mirrorcreator.com</option>
+      <option value="mixbits.ru/">mixbits.ru</option>
+      <option value="mixturecloud.com/">mixturecloud.com</option>
+      <option value="mooload.com/new/file.php">mooload.com</option>
+      <option value="mrfile.co/">mrfile.co</option>
+      <option value="multiload.cz/">multiload.cz</option>
+      <option value="multimirrorupload.com/">multimirrorupload.com</option>
+      <option value="multiup.org/fichiers/">multiup.org</option>
+      <option value="multfile.com/">multfile.com</option>
+      <option value="multiup.org/">multiup.org</option>
+      <option value="multiupfile.com/">multiupfile.com</option>
+      <option value="my.cl.ly/">my.cl.ly</option>
+      <option value="my.pcloud.com/">my.pcloud.com</option>
+      <option value="www.myfile.co.il/">myfile.co.il</option>
+      <option value="my-files.ru/">my-files.ru</option>
+      <option value="myairbridge.com/">myairbridge.com</option>
+      <option value="mab.to/">myairbridge.com (short)</option>
+      <option value="myalbum.com/">myalbum.com</option>
+      <option value="myfreefilehosting.com/f">myfreefilehosting.com</option>
+      <option value="mysharegadget.com/">mysharegadget.com</option>
+      <option value="myspacefilehosting.com/">myspacefilehosting.com</option>
+      <option value="mystore.to/">mystore.to</option>
+      <option value="myupload.dk/">myupload.dk </option>
+      <option value="myupload.space/">myupload.space</option>
+      <option value="myvdrive.com/">myvdrive.com</option>
+      <option value="ncrypt.in/">ncrypt.in</option>
+      <option value="neodrive.co/">neodrive.co</option>
+      <option value="netload.in/date">netload.in</option>
+      <option value="netspace.cloud/">netspace.cloud</option>
+      <option value="nfil.es/">nfil.es</option>
+      <option value="vault.nimbox.co.uk/">nimbox.co.uk</option>
+      <option value="nippydrive.com/">nippydrive.com</option>
+      <option value="nippyshare.com/">nippyshare.com</option>
+      <option value="nitroflare.com/">nitroflare.com</option>
+      <option value="nomofile.com/">nomofile.com</option>
+      <option value="novafile.com/">novafile.com</option>
+      <option value="nowdownload.to/">nowdownload.to</option>
+      <option value="nx0.ru/">nx0.ru</option>
+      <option value="oboom.com/">oboom.com</option>
+      <option value="okefiles.com/">okefiles.com</option>
+      <option value="oload.net/">oload.net</option>
+      <option value="omerta.is/">omerta.is</option>
+      <option value="1drv.ms/">onedrive.live.com</option>
+      <option value="oodesk.com/">oodesk.com</option>
+      <option value="opendrive.com/">opendrive.com</option>
+      <option value="od.lk/">opendrive.com (short)</option>
+      <option value="openload.co/">openload.co</option>
+      <option value="ortofiles.com/">ortofiles.com</option>
+      <option value="own-cloud.info/">own-cloud.info</option>
+      <option value="ozibox.com/">ozibox.com</option>
+      <option value="ozofiles.com/">ozofiles.com</option>
+      <option value="pcloud.com/">pcloud.com</option>
+      <option value="pdfcloudstorage.com">pdfcloudstorage.com</option>
+      <option value="pearltrees.com/">pearltrees.com</option>
+      <option value="pixeldra.in/">pixeldra.in</option>
+      <option value="plustransfer.com/">plustransfer.com</option>
+      <option value="poetic.io/">poetic.io</option>
+      <option value="pogoplug.com/">pogoplug.com</option>
+      <option value="prefiles.com/">prefiles.com</option>
+      <option value="promptfile.com/">promptfile.com</option>
+      <option value="promptfile.net/">promptfile.net</option>
+      <option value="putdrive.com/">putdrive.com</option>
+      <option value="queenshare.com/">queenshare.com</option>
+      <option value="qooy.com/">qooy.com</option>
+      <option value="quickupload.net/">quickupload.net</option>
+      <option value="rapidfileshare.net/">rapidfileshare.net</option>
+      <option value="rapidgator.net/file/">rapidgator.net</option>
+      <option value="rg.to/file/">rapidgator.net (rg.to)</option>
+      <option value="rapidrar.com/">rapidrar.com</option>
+      <option value="rapidu.net/">rapidu.net</option>
+      <option value="rarefile.net/">rarefile.net</option>
+      <option value="redbunker.net/">redbunker.net</option>
+      <option value="restfilee.com/">restfilee.com</option>
+      <option value="reupload.it/">reupload.it</option>
+      <option value="revclouds.com/">revclouds.com</option>
+      <option value="rgho.st/">rgho.st</option>
+      <option value="rghost.net/">rghost.net</option>
+      <option value="rghost.ru/*">rghost.ru</option>
+      <option value="rioupload.com/">rioupload.com</option>
+      <option value="rockfile.eu/">rockfile.eu</option>
+      <option value="rodfile.com/">rodfile.com</option>
+      <option value="rosharing.net/">rosharing.net</option>
+      <option value="rover.info/">rover.info</op     tion>
+      <option value="rusfolder.com/">rusfolder.com</option>
+      <option value="ryushare.cc/">ryushare.cc</option>
+      <option value="s-ul.eu/">s-ul.eu</option>
+      <option value="salefiles.com/">salefiles.com</option>
+      <option value="savefile.com/files">savefile.com</option>
+      <option value="screencast.com/">screencast.com</option>
+      <option value="sdilej.cz/">sdilej.cz</option>
+      <option value="files.secureserver.net/">secureserver.net</option>
+      <option value="secureupload.eu">secureupload.eu</option>
+      <option value="send-file.com/">send-file.com</option>
+      <option value="sendbigfiles.com/download.php?id=">sendbigfiles.com</option>
+      <option value="sendfile.es/">sendfile.es</option>
+      <option value="sendfile.su/">sendfile.su</option>
+      <option value="sendmyway.com/">sendmyway.com</option>
+      <option value="sendspace.com/file">sendspace.com</option>
+      <option value="sendspace.pl/">sendspace.pl</option>
+      <option value="senduit.com/">senduit.com</option>
+      <option value="sfshare.se/">sfshare.se</option>
+      <option value="share-online.biz/download.php">share-online.biz</option>
+      <option value="share4web.com/get">share4web.com</option>
+      <option value="sharebit-upload.com/">sharebit-upload.com</option>
+      <option value="shared.sx/">shared.sx</option>
+      <option value="shared2.me/">shared2.me</option>
+      <option value="sharefile.com/">sharefile.com</option>
+      <option value="sharehost.eu/">sharehost.eu</option>
+      <option value="shareplace.com/">shareplace.com</option>
+      <option value="shareplace.org/">shareplace.org</option>
+      <option value="sharerepo.com/">sharerepo.com</option>
+      <option value="sharesend.com/">sharesend.com</option>
+      <option value="sharesix.com/">sharesix.com</option>
+      <option value="sharesix.net/">sharesix.net</option>
+      <option value="sharing.wtf/">sharing.wtf</option>
+      <option value="sharingmaster.com/">sharingmaster.com</option>
+      <option value="sharpfile.com/">sharpfile.com</option>
+      <option value="sidefiles.com/">sidefiles.com</option>
+      <option value="skippyfile.com/">skippyfile.com</option>
+      <option value="sockshare.com/file/">sockshare.com</option>
+      <option value="sockshare.ws/">sockshare.ws</option>
+      <option value="solidfiles.com/">solidfiles.com</option>
+      <option value="sonifiles.com/">sonifiles.com</option>
+      <option value="speedvideo.net/">speedvideo.net</option>
+      <option value="speedy.sh/">speedy.sh</option>
+      <option value="speedyshare.com/">speedyshare.com</option>
+      <option value="spicyfile.com/">spicyfile.com</option>
+      <option value="subyshare.com/">subyshare.com</option>
+      <option value="sugarsync.com/pf/">sugarsync.com</option>
+      <option value="superbshare.com/">superbshare.com</option>
+      <option value="sv-esload.com/">sv-esload.com</option>
+      <option value="sync.com/">sync.com</option>
+      <option value="web.teamplace.net/">teamplace.net</option>
+      <option value="tempfile.ru/">tempfile.ru</option>
+      <option value="tempfiles.net/">tempfiles.net</option>
+      <option value="terafile.co/">terafile.co</option>
+      <option value="teraupload.co/">teraupload.co</option>
+      <option value="tezfiles.com/">tezfiles.com</option>
+      <option value="thinkfree.com/">thinkfree.com</option>
+      <option value="tilidom.net/">tilidom.net</option>
+      <option value="timeload.net/">timeload.net</option>
+      <option value="tinyupload.com/">tinyupload.com</option>
+      <!--<option value="trainbit.com/">trainbit.com</option> time outs-->
+      <option value="transferxl.com/">transferxl.com</option>
+      <option value="transferbigfiles.com/">transferbigfiles.com</option>
+      <option value="tunescoop.com">tunescoop.com</option>
+      <option value="turbobit.net/download/">turbobit.net</option>
+      <option value="turboot.rud/">turboot.ru</option>
+      <option value="turboupload.com/d">turboupload.com</option>
+      <option value="turtleshare.com/">turtleshare.com</option>
+      <option value="tusfiles.net/">tusfiles.net</option>
+      <option value="uafile.com/*">uafile.com</option>
+      <option value="ufile.io/">uploadfiles.io (short)</option>
+      <option value="uguu.se/">uguu.se</option>
+      <option value="ul.to/">ul.to</option>
+      <option value="ulnow.com/">ulnow.com</option>
+      <option value="uloz.to/!">uloz.to</option>
+      <option value="ulozto.net/">ulozto.net</option>
+      <option value="ulshare.se/">ulshare.se</option>
+      <option value="ultramegabit.com/file/">ultramegabit.com</option>
+      <option value="unibytes.com/">unibytes.com</option>
+      <option value="unlimit.co.il/">unlimit.co.il</option>
+      <option value="unlimitzone.com/">unlimitzone.com</option>
+      <option value="up07.net/">up07.net</option>
+      <option value="up08.net/">up08.net</option>
+      <option value="upasias.com/">upasias.com</option>
+      <option value="upfile.mobi/">upfile.mobi</option>
+      <option value="upfile.vn/">upfile.vn</option>
+      <option value="uplea.com/">uplea.com</option>
+      <option value="upload.af/">upload.af</option>
+      <option value="upload.cash/">upload.cash</option>
+      <option value="upload.ee/">upload.ee</option>
+      <option value="upload-il.com/?d=">upload-il.com</option>
+      <option value="upload.cash/">upload.cash</option>
+      <option value="upload.cd/">upload.cd</option>
+      <option value="uploadbaz.com/">uploadbaz.com</option>
+      <option value="uploadboy.com/">uploadboy.com</option>
+      <option value="uploadc.com/">uploadc.com</option>
+      <option value="uploaded.net/">uploaded.net</option>
+      <option value="uploaded.to/?id=">uploaded.to</option>
+      <option value="uploadex.com/=">uploadex.com</option>
+      <option value="uploadgig.com/">uploadgig.com</option>
+      <option value="uploadkadeh.ir/">uploadkadeh.ir</option>
+      <option value="uploading.com/">uploading.com</option>
+      <option value="uploading.site/">uploading.site</option>
+      <option value="uploadfiles.io/">uploadfiles.io</option>
+      <option value="uploadmagnet.com/">uploadmagnet.com</option>
+      <option value="uploadman.com/">www.uploadman.com</option>
+      <option value="uploadmirrors.com/">uploadmirrors.com</option>
+      <option value="uploadocean.com/">uploadocean.com</option>
+      <option value="uploadonall.com/">uploadonall.com</option>
+      <option value="uploadrocket.net/">uploadrocket.net</option>
+      <option value="uploads.to/">uploads.to</option>
+      <option value="uploads.ws/">uploads.ws</option>
+      <option value="uploadscenter.com/">uploadscenter.com</option>
+      <option value="uploadx.org/">uploadx.org</option>
+      <option value="uplod.ir/">uplod.ir</option>
+      <option value="uplod.it/">uplod.it</option>
+      <option value="upmirror.info/">upmirror.info</option>
+      <option value="uppit.com/">uppit.com</option>
+      <option value="upshare.org/">upshare.org</option>
+      <option value="upstore.net/">upstore.net</option>
+      <option value="uptobox.com/">uptobox.com</option>
+      <option value="uptodo.net/">uptodo.net</option>
+      <option value="upvast.com/">upvast.com</option>
+      <option value="usaupload.net/">usaupload.net</option>
+      <option value="userscloud.com/">userscloud.com</option>
+      <option value="usersfiles.com/">usersfiles.com</option>
+      <option value="vidzer.net/">vidzer.net</option>
+      <option value="vip-plus.in/">vip-plus.in</option>
+      <option value="volafile.io/">volafile.io</option>
+      <option value="vshare.io/">vshare.io</option>
+      <option value="webcargo.net/">webcargo.net</option>
+      <option value="webfilehost.com/?mode=viewupload&amp;id=">webfilehost.com</option>
+      <option value="webshare.cz/">webshare.cz</option>
+      <option value="wetransfer.com/">wetransfer.com</option>
+      <option value="wholecloud.net/">.wholecloud.net</option>
+      <option value="wi.to/">wi.to</option>
+      <option value="wikiupload.com/download_page.php?id=">wikiupload.com</option>
+      <option value="wipfiles.net/">wipfiles.net</option>
+      <option value="worldbytez.com/">worldbytez.com</option>
+      <option value="worldfile.net/">worldfile.net</option>
+      <option value="wyslij-plik.pl/">wyslij-plik.pl</option>
+      <option value="xvidstage.com/">xvidstage.com</option>
+      <option value="xtraupload.de/">xtraupload.de</option>
+      <option value="xubster.com/">xubster.com</option>
+      <option value="xup.in/">xup.in</option>
+      <option value="yadi.sk/">yadi.sk</option>
+      <option value="yandex.com/">yandex.com</option>
+      <option value="yourfilelink.com/get.php">yourfilelink.com</option>
+      <option value="download.yousendit.com">yousendit.com</option>
+      <option value="yunfile.com">yunfile.com</option>
+      <option value="webcloud.zaclys.com/">zaclys.com</option>
+      <option value="zalivalka.ru/">zalivalka.ru</option>
+      <option value="ziddu.com/download/">ziddu.com</option>
+      <option value="zipcloud.com/">zipcloud.com</option>
+      <option value="zippyshare.com/">zippyshare.com</option>
+      <option value="zofile.com/">zofile.com</option>
+    </select>
+    <br />
+    <input name="btnG" value="Search" type="submit" style="width:400px;"/> 
+    <br />
+    <br />
+    <font size="-1">
+    <a href="http://ddlsearch.free.fr/"
+    title="Original Home of DdlSearch">Original Implementation</a> - 
+    <a href="http://ddlsearch.free.fr/about.php"
+    title="About DdlSearch">About DdlSearch</a> - 
+    <a href="http://ddlsearch.free.fr/helpus.php" title="Help us">Help
+    us</a> - 
+    <a href="http://ddlsearch.free.fr/help.php"
+    title="Help">Help</a></font></center>
+  </body>
+</html>
